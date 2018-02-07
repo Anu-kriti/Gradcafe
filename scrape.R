@@ -29,4 +29,4 @@ scrape_gradcafe <- function(page = 1, subject = "biostatistics") {
 
 gradcafe_data <- rbindlist(lapply(1:12, scrape_gradcafe, subject = "biostatistics"))
 gradcafe_data <- rbind(gradcafe_data, scrape_gradcafe(1, "biostat"))
-saveRDS(gradcafe_data, "Data/gradcafe_data.RDS")
+saveRDS(gradcafe_data, "Data/gradcafe_data_20180206.RDS")
